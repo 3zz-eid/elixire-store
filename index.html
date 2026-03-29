@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELIXIRÉ Cosmetics</title>
+<script>
+(function () {
+  var theme = localStorage.getItem('theme');
+  if (theme !== 'light') {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script>
+<link rel="icon" type="image/png" href="images/imageselixire-logo.jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">ELIXIRÉ <small>COSMETICS</small></a>
+
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <button class="theme-toggle" type="button" onclick="toggleTheme()">
+  <span class="icon">🌙</span>
+</button>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-dark" href="products.html">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-brand">
+    <div class="container hero-brand-grid">
+
+      <div class="hero-brand-image">
+        <img src="images/imageselixire-logo.jpeg" alt="ELIXIRÉ Brand Visual">
+      </div>
+
+      <div class="hero-brand-content">
+        <span class="badge">Premium body splash collection</span>
+        <h1>Freshness you can rely on every day.</h1>
+        <p class="lead">
+          Discover body splashes designed for daily freshness, long-lasting comfort, and a clean personal care experience you can count on.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="products.html">Explore Collection</a>
+          <a class="btn btn-light" href="#featured-products">Best Sellers</a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>7</strong>
+            <span>Signature scents</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span>Available sizes</span>
+          </div>
+          <div>
+            <strong>Made</strong>
+            <span>In Egypt</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section" id="featured-products">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="badge">Featured products</span>
+          <h2>Our top picks for freshness, quality, and daily use.</h2>
+        </div>
+
+        <a class="btn btn-light" href="products.html">Go to Products</a>
+      </div>
+
+      <div class="grid-3">
+
+        <article class="card product-card featured-home-card">
+          <div class="product-image">
+            <img src="images/candilla.png" alt="Candilla Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Candilla</h3>
+            <p class="subtle">
+              A practical body splash designed to deliver freshness, comfort, and a clean daily feel.
+            </p>
+          </div>
+
+          <a class="btn btn-dark full-btn" href="products.html">Explore</a>
+        </article>
+
+        <article class="card product-card featured-home-card">
+          <div class="product-image">
+            <img src="images/Jaguar.png" alt="Jaguar Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Jaguar</h3>
+            <p class="subtle">
+              A strong and fresh scent with lasting performance for everyday personal care.
+            </p>
+          </div>
+
+          <a class="btn btn-dark full-btn" href="products.html">Explore</a>
+        </article>
+        <article class="card product-card featured-home-card">
+          <div class="product-image">
+            <img src="images/LA ROSE.png" alt="LA ROSE Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>LA ROSE</h3>
+            <p class="subtle">
+              A romantic and elegant scent that brings a touch of sophistication to your daily routine.
+            </p>
+          </div>
+
+          <a class="btn btn-dark full-btn" href="products.html">Explore</a>
+        </article>
+        <article class="card product-card featured-home-card">
+          <div class="product-image">
+            <img src="images/lilia.png" alt="Lilia Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Lilia</h3>
+            <p class="subtle">
+              A clean, fresh scent that provides long-lasting comfort and a sense of everyday confidence.
+            </p>
+          </div>
+
+          <a class="btn btn-dark full-btn" href="products.html">Explore</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ELIXIRÉ -->
+  <section class="why-section">
+    <div class="container">
+
+      <div class="why-header">
+        <span class="badge">Why ELIXIRÉ</span>
+        <h2>Simple, clean, and made for everyday confidence</h2>
+        <p>
+          ELIXIRÉ is built around quality, long-lasting freshness, and practical products designed for daily use without compromise.
+        </p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <h3>Clean identity</h3>
+          <p>Focused on personal hygiene, freshness, and everyday comfort.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Practical products</h3>
+          <p>Easy to use, long-lasting, and suitable for daily routines.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Reliable experience</h3>
+          <p>Consistent quality and performance customers can depend on.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SHORT REVIEWS FOR HOME -->
+  <section class="section">
+    <div class="container">
+      <span class="badge">Customer Reviews</span>
+      <h2 style="margin:12px 0 0;">Trusted by our customers</h2>
+
+      <div class="grid-3" style="margin-top: 30px;">
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "لسه واخده منكوا كانديلا و بجد جميلة اوى و السينت هادية و ثابتة و مختلفة و حقيقى 100000/10 🫶🏻🫶🏻"
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "شغل فاخر من اول التركيبة لحد السعر والريحة هادية وبتقعد مدة كبيرة 👏"
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "الميكس بين Lilia و Jaguar طلعلي ريحة فوق الوصف بجد ❤️❤️"
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "استنوني اول الشهر وانا بطلب فيورا مره تاني ولسا ريحته ثابته في أيدي 😍🤍🤍"
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "ال body splash تحفهههههه بجد ربنا يوفقكم ♥️♥️♥️"
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="subtle" style="margin:0;">
+            "شغلكم بيتكلم على نفسو تسلم ايديكوا بجد فنانين 🔥🔥🔥"
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container card cta-box home-cta-box">
+      <div class="grid-2" style="align-items:center;">
+        <div>
+          <span class="badge">Discover more</span>
+          <h2>Explore the full ELIXIRÉ collection.</h2>
+          <p class="subtle">
+            Browse all seven body splash variants and choose the scent that fits your daily routine and personal preference.
+          </p>
+        </div>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end;">
+          <a class="btn btn-dark" href="products.html">Shop Products</a>
+          <a class="btn btn-light" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">ELIXIRÉ <small>COSMETICS</small></div>
+        <p class="subtle" style="max-width:420px; margin-top:12px;">
+          A personal care brand focused on freshness, cleanliness, quality, and everyday confidence.
+        </p>
+      </div>
+
+      <div>
+  <h4>Shop</h4>
+  <ul>
+    <li><a href="products.html#for-her">For Her</a></li>
+    <li><a href="products.html#for-him">For Him</a></li>
+    <li><a href="products.html">All Products</a></li>
+  </ul>
+</div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/elixire_cosmetics?igsh=MWIwa283ZzNlaWQ4eQ==" target="_blank">Instagram</a></li>
+          <li><a href="https://wa.me/201558877652" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:elixire.cosmetics@gmail.com">Email Support</a></li>
+          <li><a href="https://www.facebook.com/share/1Ev4uXdosv/" target="_blank">Facebook</a></li>
+          <li><a href="contact.html">Shipping & Returns</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 ELIXIRÉ Cosmetics. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

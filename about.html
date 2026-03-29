@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - ELIXIRÉ</title>
+<script>
+(function () {
+  var theme = localStorage.getItem('theme');
+  if (theme !== 'light') {
+    document.documentElement.classList.add('dark-mode');
+  }
+})();
+</script>
+<link rel="icon" type="image/png" href="images/imageselixire-logo.jpeg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">ELIXIRÉ <small>COSMETICS</small></a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-dark" href="products.html">Shop Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">About the brand</span>
+      <h1>Premium personal care for freshness, confidence, and everyday comfort.</h1>
+      <p>
+        ELIXIRÉ is a personal care brand focused on cleanliness, freshness, and everyday confidence.
+        Our products are designed to make daily routines more comfortable, simple, and premium.
+      </p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section">
+    <div class="container grid-2">
+      <div class="story-block">
+        <div class="story-inner">
+          <span class="badge">Our story</span>
+          <h2>We believe personal care should be simple and effective.</h2>
+          <p class="subtle">
+            We are a group of pharmacy students who decided to make the most of our time by starting early in our field. We launched our brand with a strong focus on quality and affordability, carefully developing our first products to deliver the best possible experience. Our vision is to continue expanding into skincare products in the future, maintaining high quality while keeping prices accessible. 💼✨
+          </p>
+        </div>
+      </div>
+
+      <!-- VALUES -->
+      <div>
+        <div class="card" style="margin-bottom: 20px;">
+          <span class="badge">Brand values</span>
+          <h3 style="font-size: 30px; margin: 16px 0 10px;">
+            Clean, practical, premium, and made for everyday use.
+          </h3>
+          <p class="subtle">
+            Every product is designed to deliver a clean feeling, consistent quality, and a simple user experience.
+          </p>
+        </div>
+
+        <div class="card">
+          <span class="badge">Why customers choose us</span>
+          <div class="list-inline" style="margin-top: 16px;">
+            <span class="tag">Daily freshness</span>
+            <span class="tag">Simple routine</span>
+            <span class="tag">Made in Egypt</span>
+            <span class="tag">Practical use</span>
+            <span class="tag">Consistent quality</span>
+          </div>
+          <p class="subtle" style="margin-top: 18px;">
+            ELIXIRÉ offers a balance between affordability and a clean, premium everyday experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="section">
+  <div class="container">
+    <span class="badge">Customer Reviews</span>
+    <h2 style="margin:12px 0 0;">What our customers say</h2>
+
+    <div class="reviews-slider-manual" id="reviewsSlider">
+      <button class="slider-arrow prev" type="button" id="reviewsPrev">&#10094;</button>
+
+      <div class="reviews-viewport">
+        <div class="reviews-track-manual" id="reviewsTrack">
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>لسه واخده منكوا كانديلا و بجد جميلة اوى و السينت هادية و ثابتة و مختلفة و حقيقى 100000/10 🫶🏻🫶🏻</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>شغل فاخر من اول التركيبة لحد السعر والريحة هادية وبتقعد مدة كبيرة 👏</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>ريحتها تُحفه وثابته خالص ومش اخر تعامل باذن الله 🥰</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>منتج محترم وكويس جدا بالتوفيق ♥️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>بقيت مستغنيه عن كل البريفوم الى عندي وبستخدم البادي اسبلاش بتاعكو من كتر ما هو تحفه ❤️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>ريحه كل حاجه لسه في ايدي بعد ما غسلتها كمان بجد تحفه❤️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>احلي بادي اسبلاش جربته و الثبات تحفه ده غير ان الرشه تحس انها رشه طفايه حريق 😂❤️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>جربتهم كلهم بجد الروايح لذيذة اويي و ثباتها فوق الروعة فعلا قعد لتاني يوم 🫶🏻</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>ال body splash تحفهههههه بجد ربنا يوفقكم ♥️♥️♥️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>انا خدت من عندكم اربع ازايز و الميكس بين Lilia و Jaguar طلع ريحة فوق الوصف ❤️❤️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>المنتج رهيب وثباته عالي والكمية كويسه بالنسبه للسعر والعطر ليه هيبه.</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>استنوني اول الشهر وانا بطلب فيورا مره تاني ولسا ريحته ثابته في أيدي 😍🤍🤍</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>البادي سبلاش تحفه اوي وثابت بشكل مش طبيعي والريحه بجد خطيره ❤️</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>اشتريت من البراند الخطير دا والريحه تحفه وجديده جدا وتركيزه خطير وثباته روعه بجد 🤍</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/boy.jpeg" class="avatar" alt="Customer review">
+            <p>ريفيو ايه انتو شغلكم بيتكلم على نفسو تسلم ايديكوا بجد فنانين 🔥🔥🔥</p>
+          </div>
+
+          <div class="review-card">
+            <img src="images/girl.jpeg" class="avatar" alt="Customer review">
+            <p>أنا من اوائل الناس اللي اشترت وبقيت بعتمده والله تحفه وثباته خطير ❤️❤️❤️</p>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="slider-arrow next" type="button" id="reviewsNext">&#10095;</button>
+    </div>
+
+    <div class="slider-dots" id="reviewsDots"></div>
+  </div>
+</section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">ELIXIRÉ <small>COSMETICS</small></div>
+        <p class="subtle" style="max-width: 420px; margin-top: 12px;">
+          A personal care brand focused on freshness, cleanliness, and everyday confidence.
+        </p>
+      </div>
+
+      <div>
+  <h4>Shop</h4>
+  <ul>
+    <li><a href="products.html#for-her">For Her</a></li>
+    <li><a href="products.html#for-him">For Him</a></li>
+    <li><a href="products.html">All Products</a></li>
+  </ul>
+</div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/elixire_cosmetics?igsh=MWIwa283ZzNlaWQ4eQ==" target="_blank">Instagram</a></li>
+          <li><a href="https://wa.me/201558877652" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:elixire.cosmetics@gmail.com">Email Support</a></li>
+          <li><a href="https://www.facebook.com/share/1Ev4uXdosv/" target="_blank">Facebook</a></li>
+          <li><a href="returns.html">Shipping & Returns</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 ELIXIRÉ Cosmetics. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

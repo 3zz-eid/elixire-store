@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Products - ELIXIRÉ</title>
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (theme !== 'light') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+<link rel="icon" type="image/png" href="images/imageselixire-logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">ELIXIRÉ <small>COSMETICS</small></a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-dark" href="products.html">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">Product collection</span>
+      <h1>Shop the ELIXIRÉ collection.</h1>
+      <p>Choose your favorite scent, pick the size, set the quantity, and complete your order directly from the website.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 30px;">
+    <div class="container">
+      <div class="list-inline" style="margin-bottom: 22px;">
+        <span class="tag">Body Splash</span>
+        <span class="tag">Best Sellers</span>
+        <span class="tag">Daily Freshness</span>
+        <span class="tag">Long Lasting</span>
+        <span class="tag">Premium Collection</span>
+      </div>
+
+      <!-- Women Collection -->
+      <div id="for-her" class="section-head collection-divider">
+        <div>
+          <span class="badge">For Her</span>
+          <h2 class="collection-title">Women Collection</h2>
+          <p class="subtle">Soft, fruity, floral, and everyday feminine scents.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+
+        <!-- Candilla -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/candilla.png" alt="Candilla Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Candilla</h3>
+            <p class="subtle">
+              Candilla 🍬<br>
+              A juicy burst of sweet berries and candy notes, blended with soft pomegranate musk for a light, flirty finish.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Fiora -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/fiora.png" alt="Fiora Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Fiora</h3>
+            <p class="subtle">
+              Fiora 🪷<br>
+              A soft blend of rose and vanilla with a clean, calm, and long-lasting finish for everyday use.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- La Rose -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/LA ROSE.png" alt="La Rose Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>La Rose</h3>
+            <p class="subtle">
+              La Rose 🌹<br>
+              A fresh rose scent with a clean floral profile and a smooth finish suitable for daily freshness.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Lilia -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/lilia.png" alt="Lilia Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Lilia</h3>
+            <p class="subtle">
+              Lilia 🫐<br>
+              A fruity and fresh body splash with a playful profile and a clean, lasting everyday feel.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Men Collection -->
+      <div id="for-him" class="section-head collection-divider">
+        <div>
+          <span class="badge">For Him</span>
+          <h2 class="collection-title">Men Collection</h2>
+          <p class="subtle">Bold, warm, and stronger signature scents.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+
+        <!-- Jaguar -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/Jaguar.png" alt="Jaguar Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Jaguar</h3>
+            <p class="subtle">
+              Jaguar 🐆<br>
+              A strong and bold scent with spicy amber notes and a smooth finish that lasts through the day.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Prime -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/prime.png" alt="Prime Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Prime</h3>
+            <p class="subtle">
+              Prime 🔥<br>
+              A clean and strong body splash with long-lasting performance and a reliable everyday profile.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <!-- Sienna -->
+        <article class="card product-card">
+          <div class="product-image">
+            <img src="images/Sienna.png" alt="Sienna Body Splash">
+          </div>
+
+          <div class="product-info">
+            <h3>Sienna</h3>
+            <p class="subtle">
+              Sienna ☕<br>
+              A deep coffee-inspired scent with a warm and smooth profile for a bold and lasting experience.
+            </p>
+
+            <div class="sizes">
+              <div class="size-item" onclick="selectSize(this)">
+                <span>250ml</span>
+                <strong>250 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>150ml</span>
+                <strong>150 EGP</strong>
+              </div>
+              <div class="size-item" onclick="selectSize(this)">
+                <span>Pocket</span>
+                <strong>50 EGP</strong>
+              </div>
+            </div>
+
+            <div class="quantity-box">
+              <button type="button" onclick="changeQty(this,-1)">-</button>
+              <span class="qty-value">1</span>
+              <button type="button" onclick="changeQty(this,1)">+</button>
+            </div>
+
+            <button class="btn btn-dark full-btn" type="button" onclick="addToCart(this)">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hidden Netlify form -->
+  <form name="order-form" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="order-form">
+    <input type="text" name="customer_name">
+    <input type="email" name="email">
+    <input type="text" name="phone">
+    <input type="text" name="address">
+    <input type="text" name="city">
+    <input type="text" name="payment_method">
+    <textarea name="notes"></textarea>
+    <textarea name="order_details"></textarea>
+    <input type="text" name="total_price">
+    <input type="text" name="bot-field">
+  </form>
+
+  <!-- Cart Button -->
+  <button class="cart-btn" type="button" onclick="toggleCart()">
+    🛒
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- Cart Popup -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCartOutside(event)">
+    <div class="cart-box" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+        <h3 style="margin:0;">Your Cart</h3>
+        <button type="button" onclick="toggleCart()" style="border:none;background:none;font-size:24px;cursor:pointer;color:#999;">×</button>
+      </div>
+
+      <div id="cartItems"></div>
+      <div class="cart-total" id="cartTotal">Total: 0 EGP</div>
+
+      <div class="form-group" style="margin-top:20px;">
+        <label>Full Name</label>
+        <input type="text" id="checkoutName" placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="checkoutEmail" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" id="checkoutPhone" placeholder="Enter your phone number">
+      </div>
+
+      <div class="form-group">
+        <label>Address</label>
+        <input type="text" id="checkoutAddress" placeholder="Enter your address">
+      </div>
+
+<div class="form-group">
+  <label>Governorate</label>
+  <select id="checkoutCity">
+    <option value="">Select your governorate</option>
+    <option value="Cairo">Cairo</option>
+    <option value="Giza">Giza</option>
+    <option value="Alexandria">Alexandria</option>
+    <option value="Dakahlia">Dakahlia</option>
+    <option value="Red Sea">Red Sea</option>
+    <option value="Beheira">Beheira</option>
+    <option value="Fayoum">Fayoum</option>
+    <option value="Gharbia">Gharbia</option>
+    <option value="Ismailia">Ismailia</option>
+    <option value="Menofia">Menofia</option>
+    <option value="Minya">Minya</option>
+    <option value="Qalyubia">Qalyubia</option>
+    <option value="New Valley">New Valley</option>
+    <option value="Suez">Suez</option>
+    <option value="Aswan">Aswan</option>
+    <option value="Assiut">Assiut</option>
+    <option value="Beni Suef">Beni Suef</option>
+    <option value="Port Said">Port Said</option>
+    <option value="Damietta">Damietta</option>
+    <option value="Sharkia">Sharkia</option>
+    <option value="South Sinai">South Sinai</option>
+    <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+    <option value="Matrouh">Matrouh</option>
+    <option value="Luxor">Luxor</option>
+    <option value="Qena">Qena</option>
+    <option value="North Sinai">North Sinai</option>
+    <option value="Sohag">Sohag</option>
+  </select>
+</div>
+
+      <div class="form-group">
+        <label>Payment Method</label>
+        <div class="payment-options" id="checkoutPaymentOptions">
+          <div class="payment-item" data-payment="Cash on Delivery" onclick="selectCheckoutPayment(this)">
+            💵 Cash on Delivery
+            <small>Pay when you receive your order</small>
+          </div>
+
+          <div class="payment-item" data-payment="Vodafone Cash" onclick="selectCheckoutPayment(this)">
+            📱 Vodafone Cash
+            <small>Pay online using Vodafone Cash</small>
+          </div>
+
+          <div class="payment-item" data-payment="InstaPay" onclick="selectCheckoutPayment(this)">
+            💳 InstaPay
+            <small>Pay online using InstaPay</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Notes</label>
+        <textarea id="checkoutNotes" class="customer-notes" placeholder="Any notes?"></textarea>
+      </div>
+
+      <button class="checkout-btn" type="button" onclick="submitCartOrder()">
+        Confirm Order
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">ELIXIRÉ <small>COSMETICS</small></div>
+        <p class="subtle" style="max-width: 420px; margin-top: 12px;">
+          A personal care brand focused on freshness, cleanliness, quality, and everyday confidence.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#for-her">For Her</a></li>
+          <li><a href="products.html#for-him">For Him</a></li>
+          <li><a href="products.html">All Products</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/elixire_cosmetics?igsh=MWIwa283ZzNlaWQ4eQ==" target="_blank">Instagram</a></li>
+          <li><a href="mailto:elixire.cosmetics@gmail.com">Email Support</a></li>
+          <li><a href="https://www.facebook.com/share/1Ev4uXdosv/"target="_blank">Facebook</a></li>
+          <li><a href="contact.html">Shipping & Returns</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 ELIXIRÉ Cosmetics. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

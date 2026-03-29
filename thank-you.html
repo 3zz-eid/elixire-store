@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Thank You - ELIXIRÉ</title>
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (theme !== 'light') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">ELIXIRÉ <small>COSMETICS</small></a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html#for-her">For Her</a>
+        <a href="products.html#for-him">For Him</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-dark" href="products.html">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="section" style="min-height: calc(100vh - 180px); display:flex; align-items:center;">
+    <div class="container">
+      <div class="card thank-you-card">
+        <div class="thank-you-icon">✓</div>
+
+        <span class="badge">Order Submitted</span>
+        <h1 class="thank-you-title">Thank you for your order</h1>
+
+        <p class="thank-you-text">
+          Your order has been received successfully.
+        </p>
+
+        <p class="thank-you-text">
+          If you selected <strong>InstaPay</strong> or <strong>Vodafone Cash</strong>,
+          please complete your payment to confirm your order.
+        </p>
+
+        <p class="thank-you-text subtle" style="max-width: 620px; margin: 16px auto 0;">
+          Once payment is completed, our team will review your order and contact you if needed.
+        </p>
+
+        <div class="thank-you-actions">
+          <a href="products.html" class="btn btn-dark">Continue Shopping</a>
+          <a href="index.html" class="btn btn-light">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">ELIXIRÉ <small>COSMETICS</small></div>
+        <p class="subtle" style="max-width:420px; margin-top:12px;">
+          A personal care brand focused on freshness, cleanliness, quality, and everyday confidence.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html#for-her">For Her</a></li>
+          <li><a href="products.html#for-him">For Him</a></li>
+          <li><a href="products.html">All Products</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/elixire_cosmetics?igsh=MWIwa283ZzNlaWQ4eQ==" target="_blank">Instagram</a></li>
+          <li><a href="mailto:elixire.cosmetics@gmail.com">Email Support</a></li>
+          <li><a href="https://www.facebook.com/elixirecosmetics" target="_blank">Facebook</a></li>
+          <li><a href="contact.html">Shipping & Returns</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 ELIXIRÉ Cosmetics. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          nav.classList.toggle('open');
+        });
+
+        nav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', function () {
+            nav.classList.remove('open');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
